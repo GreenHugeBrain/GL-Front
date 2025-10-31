@@ -1,0 +1,31 @@
+.loading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.loading_spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(173, 216, 230, 0.3);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+.loading_container p {
+  color: #7f8c8d;
+  font-style: italic;
+  font-family: "BPG Ingiri", sans-serif;
+  margin: 0;
+}
+
+@keyframes spin {
+  to { 
+    transform: rotate(360deg); 
+  }
+}

@@ -1,0 +1,97 @@
+.popular_jobs {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+    font-family: "BPG Ingiri", sans-serif;
+}
+
+.popular_header {
+    display: flex;
+    font-family: "BPG Ingiri", sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular_header h1 {
+    font-weight: 400;
+    font-family: "BPG Ingiri", sans-serif;
+    font-size: 35px;
+}
+
+.popular_header a {
+    text-decoration: none;
+    color: rgb(10,101,204);
+    border: 1px solid rgb(221, 231, 241);
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-family: "BPG Ingiri", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.4s ease;
+}
+
+.popular_header a:hover {
+    background-color: rgb(11, 103, 208);
+    color: white;
+}
+
+.popular_header a i {
+    margin-top: 4px;
+}
+
+.popular_cards_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5% 2%;
+    font-family: "BPG Ingiri", sans-serif;
+    gap: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .popular_jobs {
+        padding: 2% 40px;
+    }
+
+    .popular_cards_div {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .popular_jobs {
+        padding: 5% 40px;
+    }
+
+    .popular_cards_div {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .popular_jobs {
+        padding: 5% 25px;
+    }
+
+    .popular_header {
+        padding: 0 8%;
+    }
+}
+
+@media (max-width: 650px) {
+    .popular_jobs {
+        padding: 5% 25px;
+    }
+
+    .popular_header {
+        padding: 0 6%;
+    }
+
+    .popular_header h1 {
+        font-size: 26px;
+    }
+}

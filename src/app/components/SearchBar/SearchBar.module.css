@@ -1,0 +1,109 @@
+.professional_search {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_input_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.search_input_container:focus-within {
+  border-color: #3498db;
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
+
+.search_input_container i {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-right: 12px;
+}
+
+.professional_search_input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #2c3e50;
+  background: transparent;
+  font-family: "BPG Ingiri", sans-serif;
+}
+
+.professional_search_input::placeholder {
+  color: #bdc3c7;
+}
+
+.clear_search_btn {
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.clear_search_btn:hover {
+  background: #ecf0f1;
+  color: #e74c3c;
+}
+
+.search_results_info {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #e8f4f8, #d4f4dd);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .professional_search {
+    margin-top: 1.5rem;
+  }
+  
+  .search_input_container {
+    padding: 10px 15px;
+  }
+  
+  .professional_search_input {
+    font-size: 0.9rem;
+  }
+  
+  .professional_search_input::placeholder {
+    font-size: 0.85rem;
+  }
+  
+  .search_results_info {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .professional_search_input::placeholder {
+    content: "მოძებნეთ პროფესიონალი...";
+  }
+}

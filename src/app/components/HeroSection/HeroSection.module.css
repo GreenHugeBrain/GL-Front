@@ -1,0 +1,266 @@
+.hero {
+    background-color: rgb(241,242,244);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    font-family: "BPG Ingiri", sans-serif;
+    justify-content: space-between;
+}
+
+.hero img {
+    height: 80%;
+    max-width: 800px;
+    margin-right: 100px;
+    box-shadow: 12px 14px 10px gray;
+}
+
+.hero_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-family: "BPG Ingiri", sans-serif;
+    justify-content: center;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-family: "BPG Ingiri", sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.hero_text h1 {
+    font-size: 80px;
+    font-weight: 100 !important;
+    padding: 0;
+    margin: 0;
+}
+
+.hero_text h2 {
+    font-size: 64px;
+    font-weight: 100 !important;
+    padding: 0;
+    margin: 0;
+}
+
+.hero_text p {
+    width: 100%;
+    max-width: 450px;
+    text-align: start;
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(76, 75, 75);
+    font-weight: 400 !important;
+}
+
+.input_div {
+    margin-top: 40px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    height: 60px;
+    border-radius: 5px;
+    font-family: "BPG Ingiri", sans-serif;
+    gap: 6.5px;
+    padding: 2px 10px;
+    padding-left: 20px;
+    border: 1px solid rgb(187, 187, 187);
+    color: rgb(10,101,204);
+}
+
+.input_div i {
+    font-size: 19px;
+}
+
+.input_div input {
+    font-size: 17px;
+    border: none;
+    padding-left: 10px;
+    height: 52px;
+    width: 160px;
+    outline: none;
+}
+
+.input_div button {
+    height: 80%;
+    background-color: rgb(10,101,204);
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input_div button:hover {
+    background-color: rgb(8,85,170);
+}
+
+.linee {
+    height: 50%;
+    width: 1px;
+    background-color: rgb(151, 151, 151);
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .hero {
+        padding: 4% 0;
+    }
+
+    .hero img {
+        margin-right: 70px;
+    }
+
+    .hero_text h1 {
+        font-size: 70px;
+    }
+    
+    .hero_text h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero {
+        padding: 10% 0;
+    }
+
+    .hero img {
+        margin-right: 50px;
+        height: 90%;
+    }
+    
+    .hero_text {
+        margin-left: 20px;
+    }
+
+    .hero_text h1 {
+        font-size: 60px;
+    }
+    
+    .hero_text h2 {
+        font-size: 40px;
+    }
+    
+    .hero_text p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 940px) {
+    .hero {
+        padding: 15% 0;
+        gap: 50px;
+    }
+
+    .hero img {
+        margin-right: 35px;
+        height: 90%;
+    }
+    
+    .hero_text {
+        margin-left: 35px;
+    }
+
+    .hero_text h1 {
+        font-size: 50px;
+    }
+    
+    .hero_text h2 {
+        font-size: 32px;
+    }
+    
+    .hero_text p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 880px) {
+    .hero {
+        padding: 0 10px;
+        gap: 12px;
+    }
+
+    .hero img {
+        margin-right: 19px;
+        height: 50%;
+    }
+    
+    .hero_text {
+        margin-left: 19px;
+    }
+
+    .input_div {
+        height: 50px;
+        padding-left: 15px;
+        width: 250px;
+        gap: 6.5px;
+    }
+    
+    .input_div input {
+        height: 45px;
+        width: 100px;
+    }
+
+    .hero_text h1 {
+        font-size: 40px;
+    }
+    
+    .hero_text h2 {
+        font-size: 27px;
+    }
+    
+    .hero_text p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 750px) {
+    .hero {
+        padding: 0 8px;
+        height: 400px;
+        gap: 10px;
+    }
+
+    .hero img {
+        margin-right: 12px;
+        height: 60%;
+    }
+    
+    .hero_text {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        padding: 0;
+        height: 550px;
+        gap: 10px;
+        padding-bottom: 130px;
+    }
+
+    .hero img {
+        height: 60%;
+    }
+
+    .hero_text h1 {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    
+    .hero_text h2 {
+        font-size: 24px;
+    }
+    
+    .hero_text p {
+        font-size: 13px;
+    }
+}

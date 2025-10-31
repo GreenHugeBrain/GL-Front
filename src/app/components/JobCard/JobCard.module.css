@@ -1,0 +1,73 @@
+.popular_card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 47px;
+    width: 22%;
+    font-family: "BPG Ingiri", sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.popular_card:hover {
+    transform: translateY(-3px);
+}
+
+.popular_icon {
+    background-color: rgb(222, 234, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    font-family: "BPG Ingiri", sans-serif;
+    width: 46px;
+    font-size: 20px;
+    color: rgb(10,101,204);
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.popular_card:hover .popular_icon {
+    background-color: rgb(10,101,204);
+    color: white;
+}
+
+.popular_text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: "BPG Ingiri", sans-serif;
+}
+
+.popular_text p {
+    font-size: 15px;
+    font-family: "BPG Ingiri", sans-serif;
+    margin: 0;
+    font-weight: 500;
+}
+
+.popular_text span {
+    font-size: 14px;
+    font-family: "BPG Ingiri", sans-serif;
+    color: gray;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .popular_card {
+        width: 18%;
+    }
+}
+
+@media (max-width: 880px) {
+    .popular_card {
+        width: 21%;
+    }
+}
+
+@media (max-width: 650px) {
+    .popular_card {
+        width: 40%;
+    }
+}

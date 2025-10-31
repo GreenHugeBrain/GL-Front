@@ -1,0 +1,31 @@
+{
+  "name": "optimized-professional-network",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "bundle-analyzer": "npx @next/bundle-analyzer"
+  },
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.9.2",
+    "axios": "^1.12.2",
+    "critters": "^0.0.23",
+    "lucide-react": "^0.540.0",
+    "next": "^14.2.33",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.32",
+    "cross-env": "^7.0.3",
+    "sharp": "^0.34.4"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
